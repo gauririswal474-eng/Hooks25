@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: #fff; color: #111; }
+.navbar { display: flex; align-items: center; gap: 40px; padding: 12px 32px; background: #f6f6f6; box-shadow: 0 2px 6px rgba(0,0,0,.08); }
+.navbar a { color: #111; text-decoration: none; }
+.navbar a:hover { text-decoration: underline; }
+.logo { width: 48px; height: 48px; border-radius: 50%; background: #fdf1dc; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+.layout { display: grid; grid-template-columns: 2fr 1fr; gap: 32px; padding: 32px; max-width: 1200px; margin: 0 auto; }
+.shoes { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; align-content: start; }
+.shoe-card { background: #d8c3a0; border-radius: 12px; padding: 14px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
+.shoe-card h3 { margin: 0 0 8px; font-size: 15px; text-align: left; }
+.shoe-card img { width: 100%; margin-top: 12px; background: #fff; border-radius: 8px; }
+button { cursor: pointer; border: 1px solid #5a4a30; background: transparent; border-radius: 14px; padding: 5px 14px; font-family: inherit; transition: background .2s; }
+button:hover { background: rgba(0,0,0,.08); }
+.cart { background: #f3f3f3; border-radius: 12px; padding: 20px; align-self: start; position: sticky; top: 16px; }
+.cart h2 { margin-top: 0; font-size: 18px; }
+.cart-item { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #ddd; font-size: 14px; }
+.empty { color: #777; }
+.total { text-align: center; margin-bottom: 0; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } .cart { position: static; } }
